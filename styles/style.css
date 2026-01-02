@@ -1,0 +1,27 @@
+html {
+  /* px means "pixels". The base font size is now 10 pixels high */
+  font-size: 10px;
+  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+  font-family: "Tagesschrift", sans-serif;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+ }
+ html {
+  background-color: #3bd636;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 80px 0px 0px ;
+  border: 10px solid rgb(92, 17, 17);
+}
