@@ -3,7 +3,7 @@ const myImage = document.querySelector("img");
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "images/roter-sand.jpg") {
-    myImage.setAttribute("src", "images/old-office.jpg");
+    myImage.setAttribute("src", "images/mutz.jpg");
   } else {
     myImage.setAttribute("src", "images/roter-sand.jpg");
   }
@@ -11,13 +11,9 @@ myImage.addEventListener("click", () => {
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 function setUserName() {
-  const myName = prompt("Hey du! Wie heißt du?");
-  if (!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem("name", myName);
-    myHeading.textContent = `Hallo ${myName}, willkommen bei der Treibholzmanufaktur!`;
-  }
+  const myName = prompt("Hey Arschloch! Wie heißt du?");
+  localStorage.setItem("name", myName);
+  myHeading.textContent = `Hallo ${myName}, willkommen bei der Treibholzmanufaktur!`;
 }
 if (!localStorage.getItem("name")) {
   setUserName();
